@@ -27,14 +27,10 @@
     background-color: blue;
     box-sizing: border-box;
     pointer-events: none;
-  }
-
-  .hotspot[slot="hotspot-hand"]{
     --min-hotspot-opacity: 0;
-    background-color: red;
   }
 
-  .hotspot[slot="hotspot-foot"]:not([data-visible]) {
+  .hotspot[slot="hotspot"]:not([data-visible]) {
     background-color: transparent;
     border: 3px solid blue;
   }
