@@ -111,9 +111,20 @@ a:link,a:visited {
     background-color: blue;
     box-sizing: border-box;
     pointer-events: none;
-    background-color: transparent;
-    border: 3px solid blue;
   }
+	
+ .annotation{
+    background-color: #888888;
+    position: absolute;
+    transform: translate(10px, 10px);
+    border-radius: 10px;
+    padding: 10px;
+  }
+  /* This keeps child nodes hidden while the element loads */
+  :not(:defined) > * {
+    display: none;
+  }	
+	
 </style>
 </head>
 <body style="font-family:Inconsolata;color:#058ED9;background-color:#020f2b;">
