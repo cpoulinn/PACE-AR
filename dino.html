@@ -43,6 +43,18 @@
   :not(:defined) > * {
     display: none;
   }
+
+.header {
+   background-color:#FFFFFF;
+   color:#020f2b;
+   padding:5px;
+   text-align:center;"
+}
+
+.header-right {
+  float: right;
+}
+
 	
 .footer {
    position: fixed;
@@ -52,6 +64,11 @@
    text-align: center;
    background-color:#020f2b;	
    justify-content: space-between;
+}
+.footer img {
+   float: right;
+   padding: 100px;
+   width: 100px;
 }
 
 * {
@@ -134,13 +151,13 @@ a:link,a:visited {
 </style>
 </head>
 <body style="font-family:Helvetica;color:#058ED9;background-color:#020f2b;">
-
-<div style="background-color:#FFFFF;color:#020f2b;padding:5px;text-align:center;">
-  <p style="font-size: .7em; display:inline;">National Aeronautics and Space Administration</p>
+<div class="header">
+   <div class="header-right">
+   <a href="#default" class="logo"><img src="files/NASA_logo_text.svg"></a>
+   </div>
   <h1>View Ceratium the dinoflagellate in Augmented Reality</h1>
-  <img src="files/NASA_logo.svg" width="80">
 </div>
-
+	
 <div style="overflow:auto">
   <div class="menu">
     <a href="https://cpoulinn.github.io/PACE-AR/">View the PACE Satellite</a>
@@ -161,9 +178,9 @@ a:link,a:visited {
 
     <div class="progress-bar hide" slot="progress-bar">
         <div class="update-bar"></div>
-    </div>
+   </div>
     </model-viewer>
- 
+  
   
 
 <div class="right"> 
@@ -173,9 +190,7 @@ a:link,a:visited {
 <div class="here"><p style="text-align: right; padding-right: 50px;font-size: 1.25em; font-weight: 900;">Try me in AR ↑</p></div>
   </div>
 <div class="footer">
-	<img src="files/PACE_logo_white_transparent copy.png" width="80">
-	<p style="font-size: .7em; display:inline;">https://pace.gsfc.nasa.gov/</p>
-	
+	<a href="https://pace.oceansciences.org/"><img src="files/PACE_logo_white_transparent copy.png"></a>
 		    
 </div>
 </body>
