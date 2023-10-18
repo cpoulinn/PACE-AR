@@ -44,13 +44,40 @@
     display: none;
   }
 	
-.footer {
+header {
+   background-color:#FFFFFF;
+   color:#020f2b;
+   padding: 10px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-title {
+   text-align: center;
+   flex: 1;
+}
+.header-logo {
+   text-align: right;
+}
+
+.header-logo img {
+   width: 200px; /* Adjust the width as needed */
+   height: auto; /* To maintain the aspect ratio */
+   padding: 5px;	
+}	
+	
+footer {
    position: fixed;
    left: 0;
    bottom: 0;
    width: 100%;
    text-align: center;
    background-color:#020f2b;	
+}
+.footer-image {
+   width: 100px; /* Adjust the width as needed */
+   height: auto; /* To maintain the aspect ratio */
 }
 
 * {
@@ -134,9 +161,14 @@ a:link,a:visited {
 </head>
 <body style="font-family:Helvetica;color:#058ED9;background-color:#020f2b;">
 
-<div style="background-color:#058ED9;color:#020f2b;padding:5px;text-align:center;">
-  <h1>View NASA's PACE Satellite in Augmented Reality</h1>
-</div>
+<header>
+  <div class="header-title">
+            <h1>View Ceratium the dinoflagellate in Augmented Reality</h1>
+        </div>
+        <div class="header-logo">
+            <img src="files/NASA_logo_text.png" alt="Logo">
+        </div>
+ </header>
 
 <div style="overflow:auto">
   <div class="menu">
@@ -197,7 +229,10 @@ a:link,a:visited {
 
 <div class="here"><p style="text-align: right; padding-right: 50px;font-size: 1.25em; font-weight: 900;">Try me in AR ↑</p></div>
   </div>
-<div class="footer"><p style="font-size: .7em;">Carina Poulin 2023</p></div>
-
+<footer>
+        <a href="https://pace.oceansciences.org/">
+            <img class="footer-image" src="files/PACE_logo_white_transparent copy.png" alt="Footer Image">
+        </a>
+</footer>
 </body>
 </html>
