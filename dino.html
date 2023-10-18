@@ -48,18 +48,23 @@
    background-color:#FFFFFF;
    color:#020f2b;
    padding:5px;
-   text-align:center;"
-   overflow: auto;	
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
 }
 
-.header-right {
-  float: right;
-  overflow: auto;	
+.header-title {
+   text-align: center;
+   flex: 1;
+}
+.header-logo {
+   text-align: right;
 }
 
-.header a.logo {
-	width: 150px;
-}
+.header-logo img {
+   width: 100px; /* Adjust the width as needed */
+   height: auto; /* To maintain the aspect ratio */
+}	
 	
 .footer {
    position: fixed;
@@ -156,12 +161,14 @@ a:link,a:visited {
 </style>
 </head>
 <body style="font-family:Helvetica;color:#058ED9;background-color:#020f2b;">
-<div class="header">
-   <div class="header-right">
-   <a href="#default" class="logo"><img src="files/NASA_logo_text.svg"></a>
-   </div>
-  <h1>View Ceratium the dinoflagellate in Augmented Reality</h1>
-</div>
+<header>
+  <div class="header-title">
+            <h1>View Ceratium the dinoflagellate in Augmented Reality</h1>
+        </div>
+        <div class="header-logo">
+            <img src="files/NASA_logo_text.svg" alt="Logo">
+        </div>
+ </header>
 	
 <div style="overflow:auto">
   <div class="menu">
